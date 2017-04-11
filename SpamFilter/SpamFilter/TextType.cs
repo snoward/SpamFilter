@@ -1,4 +1,4 @@
-namespace SpamFilter
+﻿namespace SpamFilter.SpamFiltering
 {
     public enum TextType
     {

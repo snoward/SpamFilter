@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using MimeKit;
 using NHunspell;
 
-namespace SpamFilter
+namespace SpamFilter.SpamFiltering
 {
     internal class EmailProcessor : IDisposable
     {

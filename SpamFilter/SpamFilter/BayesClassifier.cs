@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MimeKit;
 
-namespace SpamFilter
+namespace SpamFilter.SpamFiltering
 {
     public class BayesClassifier
     {
@@ -41,9 +41,9 @@ namespace SpamFilter
             messages.ForEach(msg => emailProcessor.ProcessMessage(msg).
                      ForEach(word =>
                      {
-                        if (!wordCounter[type].ContainsKey(word))
-                            wordCounter[type].Add(word, 0);
-                        wordCounter[type][word]++;
+                         if (!wordCounter[type].ContainsKey(word))
+                             wordCounter[type].Add(word, 0);
+                         wordCounter[type][word]++;
                      }));
         }
 

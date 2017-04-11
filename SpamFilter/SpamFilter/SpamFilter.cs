@@ -1,6 +1,7 @@
 ﻿using MimeKit;
+using SpamFilter.SpamFiltering;
 
-namespace SpamFilter
+namespace SpamFilter.SpamFilter
 {
     public class SpamFilter
     {
